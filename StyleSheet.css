@@ -1,0 +1,222 @@
+﻿
+/*Firefox responsive mode's different device 
+    shows the page in improper format*/
+body {
+    font-family:  Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: .9;
+    text-align: center;
+    width: 100%;
+    height:auto;
+    /*min-height:1200px;*/
+    border:2px solid #654a30;
+    /*border:2px solid red;*/
+    box-sizing:border-box;
+    /*overflow:hidden;*/
+    
+    
+}
+
+#content{
+    max-width:1360px;
+    margin: 0 auto;
+    /*background-color: blue;*/
+    height: auto;
+    position:relative;
+    margin-top:70px;
+}
+#navbar{
+    position:fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    min-height:69px;    
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    background-color:black;
+    box-sizing:border-box;
+    /*padding-right:5px;*/
+    /*clear:both;*/
+    border-top:2px solid #654a30;
+    border-left:2px solid #654a30;
+    border-right:2px solid #654a30;
+    border-bottom: 1px solid  #726d6a;
+    /*border-bottom: 1px solid  white;*/
+}
+#logo{
+    height: 50px;
+    margin-left:10px;
+    margin-right:auto;
+}
+#logo img{
+    height: 100%;  
+    margin-top: 10px; 
+    color: seashell;
+}
+
+#mission {
+    background-image: url('img-mission-background.jpg');
+    background-size:cover;
+    width:100%;
+    height:700px;
+    margin: 0 auto;    
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+}
+#statement{
+    background-color:black;
+    /*width:100%;*/
+    /*height: 100px;*/
+    height:auto;
+    /*margin-bottom:30px;*/
+    /*margin-top:300px;
+    padding-top:20px;*/
+    /*display:flex;
+    /*flex-wrap:wrap;*/
+    /*flex-direction:column;
+    justify-content:space-between;*/
+    padding:20px 0px;
+    
+}
+
+#statement h2{
+    font-size:1.7em;
+}
+
+#products{
+    max-width:1000px;
+    margin: 10px auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:auto;
+    padding: 30px 0px;
+}
+#pHeader{
+    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+#pHeader h2{
+    font-size:1.7em;
+    margin-bottom: 15px;
+}
+#images{
+    width:100%;    
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.img{
+    width:300px;
+    height:220px;
+    margin:10px;
+    font-size:.8em;
+
+}
+#images .img img{
+    width:100%;
+    height:auto;
+    margin-bottom:5px;
+
+}
+
+#locations {
+    background-image: url('img-locations-background.jpg');
+    background-size:cover;
+    width:100%;
+    height:auto;
+    margin:10px auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+#locations h2{
+    margin-top:30px;
+    font-size:1.5em;
+    font-weight:bold;
+    color:blue;
+}
+#addresses{
+    display:flex;
+    flex-direction:row;
+    margin:15px auto;
+    width:100%;
+    flex-wrap:wrap;
+    margin:20px 0px;
+    justify-content:space-around;
+    /*align-items:center;*/
+}
+
+.addrss{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:300px;
+    background-color:black;
+    line-height:2.5em;
+    padding:25px 0;
+    margin:20px 0px;
+}
+
+#footer{
+    width:100%;
+}
+
+#fAddrss{
+    margin:20px auto;
+    display:flex;
+    flex-direction:column;
+    line-height:1.7em;
+}
+#fAddrss h5{
+    font-size:.6em;
+}
+#copy{
+    text-align:center;
+    font-size:.6em;
+    margin-bottom: 20px;
+}
+
+@media all and (max-width:620px), (orientation: portrait){
+    body{
+        font-size:16px;
+    }
+    #logo{
+        margin-right:0;
+        margin-bottom:10px;
+    }
+    #navbar{
+        justify-content:center;
+        flex-direction:column;
+        /*font-size:.7em;*/
+        flex: 1 1 300px;
+    }
+    li{
+        margin:5px;
+        /*width:100%;*/
+    }
+}
+/*@media only screen and (max-width:605px) and (orientation:portrait){
+    body{
+        font-size:16px;
+    }
+    #logo{
+        margin-right:0;
+        margin-bottom:10px;
+    }
+    #navbar{
+        justify-content:center;
+        flex-direction:column;
+        font-size:.7em;
+    }
+    li{
+        margin:5px;
+    }
+}*/
+
